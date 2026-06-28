@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Wardrobe Matcher</title>
+    <link rel="stylesheet"   href="style.css">
+</head>
+<body>
+    <div class="wrap">
+        <h1>Smart Wardrobe Matcher</h1>
+        <!-- INPUT PANEL -->
+        <div class="panel">
+            <input id="name" placeholder="Clothing Item">
+            <select id="type">
+                <option>Top</option>
+                <option>Bottom</option>
+            </select>
+            <select id="style">
+                <option>Casual</option>
+                <option>Formal</option>
+                <option>Traditional</option>
+                <option>Party</option>
+            </select>
+            <button onclick="addItem()">Add Item</button>
+        </div>
+        <!-- ACTION BUTTONS -->
+        <div class="panel">
+            <button onclick="suggest()">✨ Suggest Outfit</button>
+            <button onclick="clearAll()">Clear</button>
+        </div>
+        <!-- RESULT -->
+        <div
+            class="result"
+            id="result"
+        >
+            Add clothes first
+        </div>
+        <!-- CLOTHES GRID -->
+        <div
+            class="grid"
+            id="cards">
+        </div>
+    </div>
+    <!-- SAVED OUTFITS (FULL WIDTH) -->
+    <div id="saved"></div>
+    <script src="script.js"></script>
+</body>
+</html>
